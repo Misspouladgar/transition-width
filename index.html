@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>transition</title>
+    <style>
+            body{
+                font-family: sans-serif;
+            }
+            input[type=text]{
+                width: 100px;
+                -webkit-transition: width .30s ease-in;
+                transition: width .30s ease-in;
+            }
+            input[type=text]:focus{
+                width: 250px;
+            }
+        </style>
+</head>
+<body>
+    <h1>نشانی</h1>
+    <p>لطفا آدرس خود را برای ثبت نام وارد کنید.</p>
+    آدرس : <input type="text" name="address">
+    <button>ورود</button>
+    <h4>توضیح:</h4>
+    <p>عرض 100 پیکسل است وقتی میدان ورودی فوکوس می شود، عرض آن 250 پیکسل می شود.</p>
+</body>
+</html>
